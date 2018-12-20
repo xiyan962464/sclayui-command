@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>应用中心-排班管理页面</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<link rel="stylesheet" type="text/css" href="../../css/style.css" />
+	<link rel="stylesheet" type="text/css" href="../../static/layui/css/layui.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/style_new.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/apply_c_block.css" />
+</head>
+<body>
+	<div class="apply-nav-con">
+		<div class="apply-c-up">
+			<form class="layui-form input-form" action="">
+				<div class="layui-form-item">
+					<label class="layui-form-label">排班类型：</label>
+	    			<div class="layui-input-inline">
+	      				<select name="interest" lay-filter="aihao">
+							<option value=""></option>
+							<option value="0">查询条件1</option>
+							<option value="1" selected="">查询条件2</option>
+							<option value="2">查询条件3</option>
+							<option value="3">查询条件4</option>
+							<option value="4">查询条件5</option>
+						</select>
+	    			</div>
+	    			<label class="layui-form-label">时间：</label>
+	    			<div class="layui-input-inline">
+	      				<input type="text" name="title" class="layui-input" id="time1" />
+	    			</div>	    			
+				</div>
+			</form>
+			<div class="input-btn-l" style="margin-top: 10px;">
+				<button class="layui-btn"><i class="iconfonta icon-search"></i>查询</button>
+				<button class="layui-btn choose" lay-filter="des"><i class="iconfonta icon-search"></i>值班详情</button>
+			</div>
+			<div class="input-btn-r" style="margin-top: 10px;">
+				<a class="layui-btn"><i class="iconfonta icon-upload"></i>数据上传</a>
+				<a class="layui-btn"><i class="iconfonta icon-daochu"></i>数据导出</a>
+				<a class="layui-btn"><i class="iconfonta icon-search"></i>个人查询</a>
+			</div>
+		</div>
+		<div class="app-nav-tab">
+			<div class="tab-thead">
+				<table class="layui-table">
+					<tr>
+						<th width="20%" rowspan="2">值班时间</th>
+						<th width="10%" rowspan="2">星期</th>
+						<th width="10%">总值班长</th>
+						<th width="10%">副总值班长</th>
+						<th width="10%">备勤组</th>
+						<th width="10%" rowspan="2">值班长</th>
+						<th width="10%" rowspan="2">副值班长</th>
+						<th width="20%" rowspan="2">值班人员</th>
+					</tr>
+					<tr>
+						<th>全天班</th>
+						<th>全天班</th>
+						<th>全天班</th>
+					</tr>
+				</table>
+			</div>
+			<div class="tab-tbody" style="height: 659px;">
+				<table class="layui-table">						
+					<tr>
+						<td width="20%">2018-03-01</td>
+						<td width="10%">星期四</td>
+						<td width="10%"></td>
+						<td width="10%"></td>
+						<td width="10%"></td>
+						<td width="10%"></td>
+						<td width="10%"></td>
+						<td width="20%"></td>
+					</tr>
+					<tr>
+						<td>2018-03-02</td>
+						<td>星期五</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>2018-03-03</td>
+						<td>星期六</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>2018-03-04</td>
+						<td>星期日</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>2018-03-05</td>
+						<td>星期一</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>2018-03-06</td>
+						<td>星期二</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>2018-03-07</td>
+						<td>星期三</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>2018-03-08</td>
+						<td>星期四</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>2018-03-09</td>
+						<td>星期五</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>2018-03-10</td>
+						<td>星期六</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>2018-03-04</td>
+						<td>星期日</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>2018-03-05</td>
+						<td>星期一</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>2018-03-06</td>
+						<td>星期二</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>2018-03-07</td>
+						<td>星期三</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>2018-03-08</td>
+						<td>星期四</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>2018-03-09</td>
+						<td>星期五</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>2018-03-10</td>
+						<td>星期六</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>2018-03-04</td>
+						<td>星期日</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>2018-03-05</td>
+						<td>星期一</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>2018-03-06</td>
+						<td>星期二</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>2018-03-07</td>
+						<td>星期三</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>2018-03-08</td>
+						<td>星期四</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>2018-03-09</td>
+						<td>星期五</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>2018-03-10</td>
+						<td>星期六</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="../../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../../static/layui/layui.js"></script>
+	<script type="text/javascript" src="../../js/common.js"></script>
+	<script type="text/javascript">
+		layui.config({
+			base: "../../static/extend/"
+		}).use(['jquery','form','layer','laydate','table','ht'], function(){
+			var $ = layui.jquery, form = layui.form, laydate = layui.laydate, table = layui.table, layer = layui.layer;
+
+			var mainH = $(window).height();
+			var applyCupH = $(".apply-c-up").height();
+			$(".app-nav-tab").height(mainH - applyCupH - 15);
+			var appNavTabH = $(".app-nav-tab").height();
+			var tabTheadH = $(".tab-thead").height();
+			$(".tab-tbody").height(appNavTabH - tabTheadH - 2);
+
+			laydate.render({
+				elem: "#time1"
+			});
+
+			$(".choose").click(function(){
+				layer.open({
+					type: 2,
+					title:"监狱值班详情",
+					area: ['1020px', '580px'], //自定义文本域宽高
+				  	content: "duty-details.html",
+				  	success: function(layero, index){
+					    // console.log(layero);
+					    // console.log(index);
+					}
+				});
+			});
+		});
+	</script>
+</body>
+</html>

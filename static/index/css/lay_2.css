@@ -1,0 +1,54 @@
+/*绿色*/
+
+/* top content */
+	.layui-layout-admin .layui-header {
+		background-color: #009588;
+	}
+	
+/**右键菜单*/
+	.rightmenu li:hover {
+        background-color: #00A89A;
+    }
+	
+/*左侧导航重定义*/
+	.layui-nav .layui-nav-item a {
+		background-color: #f0f3fa;
+		border: 1px solid #93C0AF;
+		color: #868686;
+	}
+	.layui-nav-tree .layui-nav-child dd.layui-this a, .layui-nav-tree .layui-this>a, .layui-nav-tree .layui-this>a:hover {
+		background-color: #009588;
+		border: 1px solid #5EC09A;
+	}
+	.layui-nav-tree .layui-nav-item dl.layui-nav-child a:hover {
+		background-color: #009588;
+		border: 1px solid #5EC09A;
+	}
+	.layui-nav-tree .layui-nav-itemed > a {
+		background-color: #009588 !important;
+		border: 1px solid #5EC09A !important;
+	}
+	.layui-nav-tree .layui-nav-item a:hover {
+		background-color: #009588;
+		border: 1px solid #5EC09A;
+	}
+		
+	.layui-nav-tree .layui-nav-bar {
+		background-color: #009588;
+	}
+
+/*右侧body*/
+	.layui-tab-title .layui-this {
+	    background-color: #009588;
+	}
+
+/* grid样式 */
+	.layui-table thead tr, .layui-table-header {
+		background-color: #009588 !important;
+	}
+	.layui-table tbody tr:hover, .layui-table-click, 
+	.layui-table-hover, .layui-table-mend, .layui-table-patch, 
+	.layui-table-tool, .layui-table-total, .layui-table-total tr, 
+	.layui-table tr:nth-child(even) {
+		background-color: #8EC9C4 !important;
+	}

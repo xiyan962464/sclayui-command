@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>首页安防统计信息--弹框</title>
+	<link rel="stylesheet" type="text/css" href="../../css/style.css" />
+	<link rel="stylesheet" type="text/css" href="../../static/layui/css/layui.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/style_new.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/pop_style.css" />
+</head>
+<body>
+	<div class="wrapper1">
+		<div class="pop-main clearfix">
+			<div class="block-table1">
+				<table class="layui-hide" id="anfCount"></table>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="../../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../../static/layui/layui.js"></script>
+	<script type="text/javascript" src="../../js/common.js"></script>
+	<script type="text/javascript">
+		layui.config({
+			base : "../../static/extend/"
+		}).use(['element','layer','jquery','ht', 'table'],function(){
+			var $ = layui.jquery, layer = layui.layer, table = layui.table;
+			table.render({
+			    elem: '#anfCount',
+			    // url:'',    //数据接口
+			    height: 490,
+			    cellMinWidth: 80, //全局定义常规单元格的最小宽度，layui 2.2.1 新增
+			    cols: [[
+			      {field:'id', width:80, title: 'ID', sort: true, align: 'center'},
+			      {field:'priname', width:80, title: '监狱名称', align: 'center'},
+			      {field:'monthsf', width:80, title: '本月释放', sort: true, align: 'center'},
+			      {field:'monthsy', width:80, title: '本月收押', align: 'center'},
+			      {field:'monthjs', title: '本月假释', width: '30%', minWidth: 100, align: 'center'}, //minWidth：局部定义当前单元格的最小宽度，layui 2.2.1 新增
+			      {field:'monthzyjw', title: '暂予监外', sort: true, align: 'center'},
+			      {field:'monthljtq', title: '离监探亲', sort: true, align: 'center'}
+			    ]],
+			    data: [{
+					"id": "10001",
+					"priname": "眉州监狱",
+					"monthsf": 4,
+					"monthsy": 2,
+					"monthjs": 15,
+					"monthzyjw": 12,
+					"monthljtq": 116
+			    }, {
+			      	"id": "10002",
+			      	"priname": "眉州监狱",
+					"monthsf": 4,
+					"monthsy": 2,
+					"monthjs": 15,
+					"monthzyjw": 12,
+					"monthljtq": 116
+			    }, {
+			      	"id": "10003",
+			      	"priname": "眉州监狱",
+					"monthsf": 4,
+					"monthsy": 2,
+					"monthjs": 15,
+					"monthzyjw": 12,
+					"monthljtq": 116
+			    }, {
+			      	"id": "10004",
+			      	"priname": "眉州监狱",
+					"monthsf": 4,
+					"monthsy": 2,
+					"monthjs": 15,
+					"monthzyjw": 12,
+					"monthljtq": 116
+			    }, {
+			      	"id": "10005",
+			      	"priname": "眉州监狱",
+					"monthsf": 4,
+					"monthsy": 2,
+					"monthjs": 15,
+					"monthzyjw": 12,
+					"monthljtq": 116
+			    }, {
+			      	"id": "10006",
+			      	"priname": "眉州监狱",
+					"monthsf": 4,
+					"monthsy": 2,
+					"monthjs": 15,
+					"monthzyjw": 12,
+					"monthljtq": 116
+			    }, {
+			      	"id": "10007",
+			      	"priname": "眉州监狱",
+					"monthsf": 4,
+					"monthsy": 2,
+					"monthjs": 15,
+					"monthzyjw": 12,
+					"monthljtq": 116
+			    }, {
+			      	"id": "10008",
+			      	"priname": "眉州监狱",
+					"monthsf": 4,
+					"monthsy": 2,
+					"monthjs": 15,
+					"monthzyjw": 12,
+					"monthljtq": 116
+			    }, {
+			      	"id": "10009",
+			      	"priname": "眉州监狱",
+					"monthsf": 4,
+					"monthsy": 2,
+					"monthjs": 15,
+					"monthzyjw": 12,
+					"monthljtq": 116
+			    }, {
+			      	"id": "10010",
+			      	"priname": "眉州监狱",
+					"monthsf": 4,
+					"monthsy": 2,
+					"monthjs": 15,
+					"monthzyjw": 12,
+					"monthljtq": 116
+			    }, {
+			      	"id": "10011",
+			      	"priname": "眉州监狱",
+					"monthsf": 4,
+					"monthsy": 2,
+					"monthjs": 15,
+					"monthzyjw": 12,
+					"monthljtq": 116
+			    }, {
+			      	"id": "10012",
+			      	"priname": "眉州监狱",
+					"monthsf": 4,
+					"monthsy": 2,
+					"monthjs": 15,
+					"monthzyjw": 12,
+					"monthljtq": 116
+			    }, {
+			      	"id": "10013",
+			      	"priname": "眉州监狱",
+					"monthsf": 4,
+					"monthsy": 2,
+					"monthjs": 15,
+					"monthzyjw": 12,
+					"monthljtq": 116
+			    }],
+			    //skin: 'line', //表格风格
+			    even: true,
+			    page: true, //是否显示分页
+			    //limits: [5, 7, 10],
+			    //limit: 5 //每页默认显示的数量
+			});
+		});
+	</script>
+</body>
+</html>

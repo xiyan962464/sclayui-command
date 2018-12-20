@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<!-- <meta http-equiv="refresh" content="60" /> -->
+	<title>应用中心-时间轴页面</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<link rel="stylesheet" type="text/css" href="../../css/style.css" />
+	<link rel="stylesheet" type="text/css" href="../../static/layui/css/layui.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/style_new.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/apply_center.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/apply_c_block.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/darktooltip.css" />
+</head>
+<body>
+	<div class="wrap-content">
+		<div class="ttimer-head"><a class="ttimer-btn" title="切换列表">切换列表</a></div>
+		<div class="ttimer-con">
+			<div class="ttimer-timer" style="display: block;">
+				<div class="ttimer-container">
+					<a class="tprev-btn" title="向前">向前</a>
+					<a class="tnext-btn" title="向后">向后</a>
+					<div class="timer-content">
+						<div class="timer-con">
+							<div class="timer-line"></div>
+							<ul class="timer-ul">
+								<!-- <li class="timer-prev">
+									<div class="timer-mark1">
+										<a class="t-dot t-prev"></a>
+										<p class="t-moment">06:30</p>
+									</div>
+								</li>
+								<li class="timer-prev">
+									<div class="timer-mark2">
+										<a class="t-dot t-prev"></a>
+										<p class="t-moment">07:30</p>
+									</div>
+								</li>
+								<li class="timer-prev">
+									<div class="timer-mark3">
+										<a class="t-dot t-prev"></a>
+										<p class="t-moment">08:30</p>
+									</div>
+								</li>
+								<li class="timer-prev timer-p-in down">
+									<div class="timer-mark4">
+										<a class="t-dot t-prev"></a>
+										<p class="t-moment">08:30</p>
+										<div class="timer-con-des" style="display: block;">
+											<div class="timer-con-block">
+												<p class="timer-state green-text">已完成的事件标题</p>
+												<p class="timer-ptext">监狱文化是指监狱作为特定性质的国家物质附属物，在建设发展过程中逐步形成的独具行业特色。</p>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="timer-prev timer-p-in up">
+									<div class="timer-mark4">
+										<a class="t-dot t-prev"></a>
+										<p class="t-moment">08:30</p>
+										<div class="timer-con-des" style="display: block;">
+											<div class="timer-con-block">
+												<p class="timer-state green-text">已完成的事件标题</p>
+												<p class="timer-ptext">监狱文化是指监狱作为特定性质的国家物质附属物，在建设发展过程中逐步形成的独具行业特色。</p>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="timer-undone timer-p-in down">
+									<div class="timer-mark4">
+										<a class="t-dot t-prev"></a>
+										<p class="t-moment">08:30</p>
+										<div class="timer-con-des" style="display: block;">
+											<div class="timer-con-block">
+												<p class="timer-state redd-text">已完成的事件标题</p>
+												<p class="timer-ptext">监狱文化是指监狱作为特定性质的国家物质附属物，在建设发展过程中逐步形成的独具行业特色。</p>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="timer-undone timer-p-in up">
+									<div class="timer-mark4">
+										<a class="t-dot t-prev"></a>
+										<p class="t-moment">08:30</p>
+										<div class="timer-con-des" style="display: block;">
+											<div class="timer-con-block">
+												<p class="timer-state redd-text">已完成的事件标题</p>
+												<p class="timer-ptext">监狱文化是指监狱作为特定性质的国家物质附属物，在建设发展过程中逐步形成的独具行业特色。</p>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="timer-doing timer-p-in down">
+									<div class="timer-mark4">
+										<a class="t-dot t-prev"></a>
+										<p class="t-moment">08:30</p>
+										<div class="timer-con-des" style="display: block;">
+											<div class="timer-con-block">
+												<p class="timer-state org-text">已完成的事件标题</p>
+												<p class="timer-ptext">监狱文化是指监狱作为特定性质的国家物质附属物，在建设发展过程中逐步形成的独具行业特色。</p>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="timer-tobe timer-p-in up">
+									<div class="timer-mark4">
+										<a class="t-dot t-prev"></a>
+										<p class="t-moment">08:30</p>
+										<div class="timer-con-des" style="display: block;">
+											<div class="timer-con-block">
+												<p class="timer-state blue-text">已完成的事件标题</p>
+												<p class="timer-ptext">监狱文化是指监狱作为特定性质的国家物质附属物，在建设发展过程中逐步形成的独具行业特色。</p>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="timer-tobe timer-p-in down">
+									<div class="timer-mark4">
+										<a class="t-dot t-prev"></a>
+										<p class="t-moment">08:30</p>
+										<div class="timer-con-des" style="display: block;">
+											<div class="timer-con-block">
+												<p class="timer-state blue-text">已完成的事件标题</p>
+												<p class="timer-ptext">监狱文化是指监狱作为特定性质的国家物质附属物，在建设发展过程中逐步形成的独具行业特色。</p>
+											</div>
+										</div>
+									</div>
+								</li>								
+								<li class="timer-tobe">
+									<div class="timer-mark2">
+										<a class="t-dot t-prev"></a>
+										<p class="t-moment">07:30</p>
+									</div>
+								</li>
+								<li class="timer-tobe">
+									<div class="timer-mark2">
+										<a class="t-dot t-prev"></a>
+										<p class="t-moment">07:30</p>
+									</div>
+								</li> -->
+							</ul>							
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="ttimer-tab">
+				<div class="zbap-thead">
+					<table cellspacing="0" cellpadding="0" border="0">
+						<tr>
+							<th>事件编号</th>
+							<th>时间</th>
+							<th>事件标题</th>
+							<th>接收人</th>
+							<th>完成情况</th>
+						</tr>
+					</table>
+				</div>
+				<div class="zbap-tbody">
+					<table></table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../../static/layui/layui.js"></script>
+	<script type="text/javascript" src="../../js/common.js"></script>
+	<script type="text/javascript" src="../../js/jquery.darktooltip.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			setDateTime();		// 获取实时时间			
+		});
+
+		// 表格内容拼接
+		/*0是已经完成的状态；-1是到时间未完成的状态；1正在执行的状态；2是待完成的状态*/
+		var tabJson = [
+			{"eventNo":"001","eventTime":"06:30","eventTitle":"在这一刻的事件的标题","eventContent":"监狱文化是指监狱作为特定性质的国家物质附属物，在建设发展过程中逐步形成的独具行业特色。","recPeo":"张大大","eventState": 0},
+			{"eventNo":"002","eventTime":"07:30","eventTitle":"在这一刻的事件的标题","eventContent":"监狱文化是指监狱作为特定性质的国家物质附属物，在建设发展过程中逐步形成的独具行业特色。","recPeo":"张大大","eventState": -1},
+			{"eventNo":"003","eventTime":"08:30","eventTitle":"在这一刻的事件的标题","eventContent":"监狱文化是指监狱作为特定性质的国家物质附属物，在建设发展过程中逐步形成的独具行业特色。","recPeo":"张大大","eventState": 1},
+			{"eventNo":"004","eventTime":"09:30","eventTitle":"在这一刻的事件的标题","eventContent":"监狱文化是指监狱作为特定性质的国家物质附属物，在建设发展过程中逐步形成的独具行业特色。","recPeo":"张大大","eventState": 2},
+			{"eventNo":"005","eventTime":"10:30","eventTitle":"在这一刻的事件的标题","eventContent":"监狱文化是指监狱作为特定性质的国家物质附属物，在建设发展过程中逐步形成的独具行业特色。","recPeo":"张大大","eventState": 2},
+			{"eventNo":"006","eventTime":"11:30","eventTitle":"在这一刻的事件的标题","eventContent":"监狱文化是指监狱作为特定性质的国家物质附属物，在建设发展过程中逐步形成的独具行业特色。","recPeo":"张大大","eventState": 2},
+			{"eventNo":"007","eventTime":"12:30","eventTitle":"在这一刻的事件的标题","eventContent":"监狱文化是指监狱作为特定性质的国家物质附属物，在建设发展过程中逐步形成的独具行业特色。","recPeo":"张大大","eventState": 2},
+			{"eventNo":"008","eventTime":"13:30","eventTitle":"在这一刻的事件的标题","eventContent":"监狱文化是指监狱作为特定性质的国家物质附属物，在建设发展过程中逐步形成的独具行业特色。","recPeo":"张大大","eventState": 2},
+			{"eventNo":"009","eventTime":"14:30","eventTitle":"在这一刻的事件的标题","eventContent":"监狱文化是指监狱作为特定性质的国家物质附属物，在建设发展过程中逐步形成的独具行业特色。","recPeo":"张大大","eventState": 2},
+			{"eventNo":"010","eventTime":"15:30","eventTitle":"在这一刻的事件的标题","eventContent":"监狱文化是指监狱作为特定性质的国家物质附属物，在建设发展过程中逐步形成的独具行业特色。","recPeo":"张大大","eventState": 2},
+			{"eventNo":"011","eventTime":"16:30","eventTitle":"在这一刻的事件的标题","eventContent":"监狱文化是指监狱作为特定性质的国家物质附属物，在建设发展过程中逐步形成的独具行业特色。","recPeo":"张大大","eventState": 2},
+			{"eventNo":"012","eventTime":"17:30","eventTitle":"在这一刻的事件的标题","eventContent":"监狱文化是指监狱作为特定性质的国家物质附属物，在建设发展过程中逐步形成的独具行业特色。","recPeo":"张大大","eventState": 2},
+			{"eventNo":"013","eventTime":"18:30","eventTitle":"在这一刻的事件的标题","eventContent":"监狱文化是指监狱作为特定性质的国家物质附属物，在建设发展过程中逐步形成的独具行业特色。","recPeo":"张大大","eventState": 2},
+			{"eventNo":"014","eventTime":"19:30","eventTitle":"在这一刻的事件的标题","eventContent":"监狱文化是指监狱作为特定性质的国家物质附属物，在建设发展过程中逐步形成的独具行业特色。","recPeo":"张大大","eventState": 2},
+			{"eventNo":"015","eventTime":"20:30","eventTitle":"在这一刻的事件的标题","eventContent":"监狱文化是指监狱作为特定性质的国家物质附属物，在建设发展过程中逐步形成的独具行业特色。","recPeo":"张大大","eventState": 2}
+		];		
+		var tabHtml = "";
+		for(var i=0;i<tabJson.length;i++){
+			tabHtml += "<tr>";
+			tabHtml += "	<td>"+tabJson[i].eventNo+"</td>";
+			tabHtml += "	<td>"+tabJson[i].eventTime+"</td>";
+			tabHtml += "	<td><a class='tip-a' data-tooltip='#tip-div'>"+tabJson[i].eventTitle+"</a><div id='tip-div' style='display:none;'><h3 class='org-text'>"+tabJson[i].eventTitle+"</h3><p>"+tabJson[i].eventContent+"</p></div></td>";
+			tabHtml += "	<td>"+tabJson[i].recPeo+"</td>";			
+			if(tabJson[i].eventState == 0){				
+				tabHtml += "<td class='green-text'>已完成</td>";
+			}
+			if(tabJson[i].eventState == -1){
+				tabHtml += "<td class='redd-text'>到时间未完成</td>";
+			}
+			if(tabJson[i].eventState == 1){
+				tabHtml += "<td class='org-text'>当前执行中</td>";
+			}
+			if(tabJson[i].eventState == 2){
+				tabHtml += "<td class='blue-text'>待完成</td>";
+			}
+			tabHtml += "</tr>";
+		}
+		
+		$(".ttimer-tab .zbap-tbody table").html(tabHtml);
+		$(".tip-a").darkTooltip({
+			opacity: 1,
+			gravity: 'west'
+		});
+		$(".tip-a:last").darkTooltip({
+			opacity: 1,
+			gravity: 'south'
+		});
+		
+		/*时间轴内容  开始*/
+		/*0是已经完成的状态；-1是未完成的状态；1是待完成的状态*/
+		var dataJson = [
+			{"tTimer":"06:30","tTitle":"事件标题1","timerCon":"监狱文化是指监狱作为特定性质的国家物质附属物，在建设发展过程中逐步形成的独具行业特色。", "tState": 0},
+			{"tTimer":"07:30","tTitle":"事件标题2","timerCon":"监狱文化是指监狱作为特定性质的国家物质附属物，在建设发展过程中逐步形成的独具行业特色。", "tState": 0},
+			{"tTimer":"08:30","tTitle":"事件标题3","timerCon":"监狱文化是指监狱作为特定性质的国家物质附属物，在建设发展过程中逐步形成的独具行业特色。", "tState": 0},
+			{"tTimer":"09:30","tTitle":"事件标题4","timerCon":"监狱文化是指监狱作为特定性质的国家物质附属物，在建设发展过程中逐步形成的独具行业特色在建设发展过程中逐步形成的独具行业特色在建设发展过程中逐步形成的独具行业特色在建设发展过程中逐步形成的独具行业特色在建设发展过程中逐步形成的独具行业特色。", "tState": 0},
+			{"tTimer":"10:30","tTitle":"事件标题5","timerCon":"监狱文化是指监狱作为特定性质的国家物质附属物，在建设发展过程中逐步形成的独具行业特色在建设发展过程中逐步形成的独具行业特色在建设发展过程中逐步形成的独具行业特色在建设发展过程中逐步形成的独具行业特色。", "tState": -1},
+			{"tTimer":"11:30","tTitle":"事件标题6","timerCon":"监狱文化是指监狱作为特定性质的国家物质附属物，在建设发展过程中逐步形成的独具行业特色在建设发展过程中逐步形成的独具行业特色。", "tState": 1},
+			{"tTimer":"12:30","tTitle":"事件标题7","timerCon":"监狱文化是指监狱作为特定性质的国家物质附属物，在建设发展过程中逐步形成的独具行业特色。", "tState": 1},
+			{"tTimer":"13:30","tTitle":"事件标题8","timerCon":"监狱文化是指监狱作为特定性质的国家物质附属物，在建设发展过程中逐步形成的独具行业特色。", "tState": 1},
+			{"tTimer":"14:30","tTitle":"事件标题9","timerCon":"监狱文化是指监狱作为特定性质的国家物质附属物，在建设发展过程中逐步形成的独具行业特色在建设发展过程中逐步形成的独具行业特色在建设发展过程中逐步形成的独具行业特色在建设发展过程中逐步形成的独具行业特色。", "tState": 1},
+			{"tTimer":"15:30","tTitle":"事件标题10","timerCon":"监狱文化是指监狱作为特定性质的国家物质附属物，在建设发展过程中逐步形成的独具行业特色。", "tState": 1},
+			{"tTimer":"16:30","tTitle":"事件标题11","timerCon":"监狱文化是指监狱作为特定性质的国家物质附属物，在建设发展过程中逐步形成的独具行业特色。", "tState": 1},
+			{"tTimer":"17:30","tTitle":"事件标题12","timerCon":"监狱文化是指监狱作为特定性质的国家物质附属物，在建设发展过程中逐步形成的独具行业特色。", "tState": 1},
+			{"tTimer":"18:30","tTitle":"事件标题13","timerCon":"监狱文化是指监狱作为特定性质的国家物质附属物，在建设发展过程中逐步形成的独具行业特色在建设发展过程中逐步形成的独具行业特色在建设发展过程中逐步形成的独具行业特色。", "tState": 1},
+			{"tTimer":"21:30","tTitle":"事件标题11","timerCon":"监狱文化是指监狱作为特定性质的国家物质附属物，在建设发展过程中逐步形成的独具行业特色。", "tState": 1},
+			{"tTimer":"22:30","tTitle":"事件标题12","timerCon":"监狱文化是指监狱作为特定性质的国家物质附属物，在建设发展过程中逐步形成的独具行业特色在建设发展过程中逐步形成的独具行业特色在建设发展过程中逐步形成的独具行业特色。", "tState": 1},
+			{"tTimer":"23:30","tTitle":"事件标题13","timerCon":"监狱文化是指监狱作为特定性质的国家物质附属物，在建设发展过程中逐步形成的独具行业特色。", "tState": 1}
+		];
+		// 时间轴内容拼接
+		var liHtml = "";
+		for(var j=0;j<dataJson.length;j++){
+			if(dataJson[j].tState == -1){
+				liHtml += "<li class='timer-undone'>";
+				liHtml += "	<a class='t-dot'></a>";
+				liHtml += "	<p class='t-moment'>"+dataJson[j].tTimer+"</p>";
+				liHtml += "	<div class='timer-con-des'>";
+				liHtml += "		<div class='timer-con-block'>";
+				liHtml += "			<p class='timer-state'>"+dataJson[j].tTitle+"</p>";
+				liHtml += "			<p class='timer-ptext redd-text'>"+dataJson[j].timerCon+"</p>";
+				liHtml += "		</div>";
+				liHtml += "	</div>";
+				liHtml += "</li>";
+			}else {
+				liHtml += "<li>";
+				liHtml += "	<a class='t-dot'></a>";
+				liHtml += "	<p class='t-moment'>"+dataJson[j].tTimer+"</p>";
+				liHtml += "	<div class='timer-con-des'>";
+				liHtml += "		<div class='timer-con-block'>";
+				liHtml += "			<p class='timer-state'>"+dataJson[j].tTitle+"</p>";
+				liHtml += "			<p class='timer-ptext'>"+dataJson[j].timerCon+"</p>";
+				liHtml += "		</div>";
+				liHtml += "	</div>";
+				liHtml += "</li>";
+			}			
+		}
+		$(".timer-ul").append(liHtml);
+		var curTime = setDateTime();
+
+		// 获取timer-content,timer-con和timer-ul的宽度
+		var timerContent = $(".timer-content");
+		var timerContentW = timerContent.width();
+		var timerCon = timerContent.find(".timer-con");
+		var timerUl = timerCon.find(".timer-ul");		
+		var timerLilen = timerUl.find("li").length;
+		timerUl.width(timerLilen*306);
+		var timerUlConW = timerUl.width();
+		timerCon.width(timerUlConW);
+
+		var curNum = curTime.replace(/:/g,""), dataNum = [], dataNum1 = [], dataNum2 = [], timerP;
+		var liLen = $(".timer-ul li").length;
+		for(var k = 0;k < liLen;k++){
+			timerP = $(".timer-ul li").eq(k).find(".t-moment").text();
+			dataNum.push(timerP);
+		}
+
+		for(var l = 0;l<dataNum.length;l++){
+			if(curNum < dataNum[l].replace(/:/g,"")){
+				$(".timer-ul li").eq(l).addClass("timer-tobe");
+			}else {
+				if(dataJson[l].tState == -1){
+					$(".timer-ul li").eq(l).addClass("timer-undone");
+				}else {
+					$(".timer-ul li").eq(l).addClass("timer-prev");
+				}				
+			}
+			if(l == aa(curNum, dataNum)){
+				var liCon = $(".timer-ul li");
+				
+				if(l%2 == 0){
+					$(".timer-ul li:even").addClass("down");
+					$(".timer-ul li:odd").addClass("up");
+				}else {
+					$(".timer-ul li:even").addClass("up");
+					$(".timer-ul li:odd").addClass("down");
+				}
+
+				if(l !== 0){
+					// 需要执行的
+					$(".timer-ul li").eq(l).attr("class","").addClass("timer-doing timer-p-in down");
+					$(".timer-ul li").eq(l).find(".timer-con-des").show();
+					// 之前时间的
+					if(dataJson[l-1].tState == -1){
+						$(".timer-ul li").eq(l-1).attr("class","").addClass("timer-undone timer-p-in up");
+						$(".timer-ul li").eq(l-1).find(".timer-con-des").show();
+					}else {
+						$(".timer-ul li").eq(l-1).attr("class","").addClass("timer-prev timer-p-in up");
+						$(".timer-ul li").eq(l-1).find(".timer-con-des").show();
+					}
+					// 之后时间的
+					$(".timer-ul li").eq(l+1).attr("class","").addClass("timer-tobe timer-p-in up");
+					$(".timer-ul li").eq(l+1).find(".timer-con-des").show();
+				}else {
+					// 需要执行的
+					$(".timer-ul li").eq(l).attr("class","").addClass("timer-doing timer-p-in down");
+					$(".timer-ul li").eq(l).find(".timer-con-des").show();
+					// 之后时间的
+					$(".timer-ul li").eq(l+1).attr("class","").addClass("timer-tobe timer-p-in up");
+					$(".timer-ul li").eq(l+1).find(".timer-con-des").show();
+				}
+				
+				// 滚动条自动定位到中间位置
+				var scrollTo = $(".timer-ul li").eq(l);
+				timerContent.animate({
+					scrollLeft: scrollTo.offset().left - timerContent.offset().left + timerContent.scrollLeft() - 306*2
+				}, 500);
+			}
+		}
+
+		// 点击时间点，显示/隐藏时间点内容详情
+		$(".timer-ul li").click(function(){			
+			if($(this).hasClass("timer-doing")){
+				return;
+			}
+			$(this).toggleClass("timer-p-in");
+			var timerCondes = $(this).find(".timer-con-des");
+			if(timerCondes.css("display") == "none"){				
+				timerCondes.show();
+			}else {
+				timerCondes.hide();
+			}
+		});
+		// 阻止冒泡事件
+		$(".timer-ul li .timer-con-des").click(function(){
+			if (event.stopPropagation) { 
+	        	// this code is for Mozilla and Opera 
+	        	event.stopPropagation(); 
+	        } 
+	        else if (window.event) { 
+	        	// this code is for IE 
+	        	window.event.cancelBubble = true; 
+	        }
+		});
+
+		// 点击向前向后按钮事件
+		$(".tprev-btn").click(function(){
+			if(timerContent[0].scrollLeft == 0){
+				// alert("已经到最前！");
+				timerContent[0].scrollLeft = timerUlConW - timerContentW;
+			}else {
+				timerContent[0].scrollLeft -= 306;
+			}
+		});
+		$(".tnext-btn").click(function(){
+			if(timerUlConW - timerContent[0].scrollLeft > timerContentW){
+				timerContent[0].scrollLeft += 306;
+			}else {
+				timerContent[0].scrollLeft = 0;
+			}
+		});
+
+		//获取实时时间
+		function setDateTime(){
+			var date = new Date();
+			var hour = date.getHours();
+			var minute = date.getMinutes();
+			if(hour < 10){
+				hour = "0" + hour;
+			}
+			if(minute < 10){
+				minute = "0" + minute;
+			}
+			return hour + ":" + minute;
+		}
+		// 获取离实时时间最接近时间的li的索引值
+		function aa(a,b){
+			var x;
+			var y = [];
+			var c = 0;
+			
+			for(var i = 0;i < b.length;i++){
+				var parB = parseInt(b[i].replace(/:/g,""));
+				x = Math.abs(a - parB)/60;
+				y.push(x);
+			}
+			
+			var minN = Math.min.apply(null,y);		// 获取y数组中绝对值最小的数据
+			// 获取y数组中绝对值最小的数据的索引
+			for(var m = 0;m < y.length;m++){
+				if(minN == y[m]){
+					c = m;
+				}
+			}
+			return c;
+		}
+
+		/*时间轴内容  结束*/
+
+		// 获取自适应高度
+		var mainHeight = $(window).height();
+		$(".ttimer-con").height(mainHeight - 62);
+		var ttimerConH = $(".ttimer-con").height();
+		$(".ttimer-container, .ttimer-timer, .ttimer-tab").height(ttimerConH - 3);
+		$(".ttimer-tab .zbap-tbody").height(ttimerConH - 52);
+		$(".timer-content, .timer-con").height(ttimerConH - 3);
+
+		var liLen = $(".timer-ul").find("li").length;
+		$(".timer-line, .timer-ul").width(liLen*306);
+
+		// 点击切换按钮
+		$(".ttimer-btn").click(function(){
+			var $timer = $(".ttimer-timer");
+			if($timer.css("display") == "block"){
+				$(".ttimer-timer").hide();
+				$(".ttimer-tab").show();
+				$(this).text("切换时间轴");
+				$(this).attr("title","切换时间轴");
+			}else {
+				$(".ttimer-timer").show();
+				$(".ttimer-tab").hide();
+				$(this).text("切换列表");
+				$(this).attr("title","切换列表");
+			}
+		});		
+	</script>
+</body>
+</html>

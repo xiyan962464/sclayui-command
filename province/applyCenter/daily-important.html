@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>应用中心-要情日报页面</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<link rel="stylesheet" type="text/css" href="../../css/style.css" />
+	<link rel="stylesheet" type="text/css" href="../../static/layui/css/layui.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/style_new.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/apply_center.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/apply_c_block.css" />
+</head>
+<body>
+	<div class="apply-nav-con">
+		<div class="daily-con">
+			<div class="sear-btns clearfix">
+				<form class="layui-form" action="">
+					<div class="input-btn-l">
+						<button class="layui-btn"><i class="iconfonta icon-edit"></i>修改提交</button>
+						<button class="layui-btn layui-btn-warm"><i class="iconfonta icon-delete"></i>删除</button>
+					</div>
+					<div class="input-btn-r">
+						<div class="layui-input-inline" style="margin-right: 6px;">
+							<input class="layui-input" id="time2" type="text" readonly />
+						</div>
+						<button class="layui-btn"><i class="iconfonta icon-edit"></i>查询</button>
+						<button class="layui-btn"><i class="iconfonta icon-del"></i>生成最新</button>
+					</div>
+				</form>
+			</div>
+			<div class="daily-container" id="daily-container">
+				<div class="input-btn-r">
+					<button class="layui-btn"><i class="iconfonta icon-guidang"></i>打印</button>
+					<button class="layui-btn layui-btn-warm"><i class="iconfonta icon-daochu"></i>导出</button>
+				</div>
+				<div class="daily-main">
+					<div class="daily-content">
+						<h3>指挥中心要情日报</h3>
+						<p>时间：2017-11-01&nbsp;&nbsp;&nbsp;&nbsp;生成人：超级管理员</p>
+						<div class="daily-tab">
+							<table class="layui-table">
+								<tr>
+									<td width="25%" class="td-fw-r"><input type="text" name="" class="td-input" value="监狱押犯概况" /></td>
+									<td width="75%"><textarea class="td-textarea">截止今日6点，监狱在册罪犯8739名，较昨日6名，实际在押8640名，较昨日6名。其中暂予监外执行20名，解回再审75名（含特情借用3名），在逃4名。</textarea></td>
+								</tr>
+								<tr>
+									<td class="td-fw-r"><input type="text" name="" class="td-input" value="罪犯进出大门情况" /></td>
+									<td><textarea class="td-textarea">从昨日6时至今日6时，罪犯出监狱大门6人次，其中刑满6人次。罪犯进监狱大门0人次</textarea></td>
+								</tr>
+								<tr>
+									<td class="td-fw-r"><input type="text" name="" class="td-input" value="外来人员车辆进出大门情况" /></td>
+									<td width="75%"><textarea class="td-textarea">从昨日6时至今日6时，外来人员进出32人次，车辆进出17人次，情况正常</textarea></td>
+								</tr>
+								<tr>
+									<td class="td-fw-r"><input type="text" name="" class="td-input" value="安防设施运行情况" /></td>
+									<td><textarea class="td-textarea">正常</textarea></td>
+								</tr>
+								<tr>
+									<td class="td-fw-r"><input type="text" name="" class="td-input" value="罪犯违法违纪情况" /></td>
+									<td><textarea class="td-textarea">无</textarea></td>
+								</tr>
+								<tr>
+									<td class="td-fw-r"><input type="text" name="" class="td-input" value="重大活动情况" /></td>
+									<td><textarea class="td-textarea">无</textarea></td>
+								</tr>
+								<tr>
+									<td class="td-fw-r"><input type="text" name="" class="td-input" value="其他情况" /></td>
+									<td><textarea class="td-textarea">无</textarea></td>
+								</tr>
+								<tr>
+									<td class="td-fw-r"><input type="text" name="" class="td-input" value="其他情况" /></td>
+									<td><textarea class="td-textarea">无</textarea></td>
+								</tr>
+								<tr>
+									<td class="td-fw-r"><input type="text" name="" class="td-input" value="其他情况" /></td>
+									<td><textarea class="td-textarea">无</textarea></td>
+								</tr>
+								<tr>
+									<td class="td-fw-r"><input type="text" name="" class="td-input" value="其他情况" /></td>
+									<td><textarea class="td-textarea">无</textarea></td>
+								</tr>
+								<tr>
+									<td class="td-fw-r"><input type="text" name="" class="td-input" value="其他情况" /></td>
+									<td><textarea class="td-textarea">无</textarea></td>
+								</tr>
+								<tr>
+									<td class="td-fw-r"><input type="text" name="" class="td-input" value="其他情况" /></td>
+									<td><textarea class="td-textarea">无</textarea></td>
+								</tr>
+								<tr>
+									<td class="td-fw-r"><input type="text" name="" class="td-input" value="其他情况" /></td>
+									<td><textarea class="td-textarea">无</textarea></td>
+								</tr>
+								<tr>
+									<td class="td-fw-r"><input type="text" name="" class="td-input" value="其他情况" /></td>
+									<td><textarea class="td-textarea">无</textarea></td>
+								</tr>
+							</table>
+						</div>
+					</div>						
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../../static/layui/layui.js"></script>
+	<script type="text/javascript" src="../../js/common.js"></script>
+	<script type="text/javascript">
+		layui.config({
+			base: "../../static/extend/"
+		}).use(['jquery','form','layer','laydate','table','ht'], function(){
+			var $ = layui.jquery, form = layui.form, laydate = layui.laydate, table = layui.table, layer = layui.layer;
+
+			var mainH = $(window).height();
+			var searBtnsH = $(".sear-btns").height();
+			$(".daily-container").height(mainH - searBtnsH - 30);
+			var dailyContainerH = $(".daily-container").height();
+			var inputBtnrH = $(".input-btn-r").height();
+			$(".daily-tab").height(dailyContainerH - inputBtnrH - 122);
+
+			laydate.render({
+				elem:'#time2'
+			});
+		});
+	</script>
+</body>
+</html>
